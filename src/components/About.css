@@ -48,21 +48,113 @@
     object-fit: cover;
   }
   
+  .MASTER {
+    border: none;
+    padding: auto;
+
+
+    --s: 24px; /* the size of the wave */
+    --p: 1.2;   /* the curvature of the wave [0 2] */
+  
+    --R: calc(var(--s)*sqrt(var(--p)*var(--p) + 1)) at 50%;
+    mask:
+      radial-gradient(var(--R) calc(100% - var(--s)*(1 + var(--p))), #000 99%, #0000 101%) 
+        calc(50% - 2*var(--s)) 0/calc(4 * var(--s)),
+      radial-gradient(var(--R) calc(100% + var(--s)*var(--p)), #0000 99%, #000 101%) 
+        50% calc(-1*var(--s))/calc(4 * var(--s)) repeat-x;
+  }
+
+
+  .socials ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .socials li {
+    display: inline;
+    margin: 5px;
+    position: relative; /* Enable positioning context for shadow */
+  }
+  
+  .icon-img {
+    width: 40px;
+    height: 38px;
+    margin-left: 5px;
+    image-resolution: from-image;
+    object-fit: cover;
+    border-radius: 20%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  .socials li:hover .icon-img {
+    transform: translateY(-3px); /* Move image up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+  }
+
+  .bio-text {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .bio-text p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .bio-text br {
+    display: none;
+  }
+
+  .bio-text a {
+    color: #1e90ff; 
+    text-decoration: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .bio-text a:hover {
+    text-decoration: underline;
+  }
+
+  .bio-text p:first-of-type {
+    margin-top: 0;
+  }
+  
+  .bio-text p:last-of-type {
+    margin-bottom: 0;
+  }
+
+
   @media (max-width: 768px) {
     .about-content {
-      flex-direction: row;
-      align-items: center;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
     }
   
     .text-section {
-      margin-right: 10px;
-      text-align: left;
+      margin-right: 0; /* Remove right margin for text section */
+      text-align: center; /* Center-align text */
+      margin-top: 20px; /* Add some space between image and text */
     }
   
     .profile-image {
       width: 100%;
-      max-width: 150px; /* Adjust the max width for smaller screens */
+      max-width: 150px; /* Adjust max width for smaller screens */
       height: auto; /* Maintain aspect ratio */
+      margin-bottom: 20px; /* Add space below the image */
     }
+
+    @media (max-width: 768px) {
+      .Waves {
+        --mask:
+          radial-gradient(8vw at 50% calc(100% - 12vw), #000 99%, #0000 101%) calc(50% - 9vw) 0/16vw 100%,
+          radial-gradient(8vw at 50% calc(100% + 8vw), #0000 99%, #000 101%) 50% calc(100% - 4vw)/16vw 100% repeat-x;
+      }
+    }
+
   }
-  
