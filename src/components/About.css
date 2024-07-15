@@ -1,0 +1,68 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%; /* Reduced padding to minimize wasted space */
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px; /* Adjust max-width as necessary */
+  }
+  
+  .text-section {
+    flex: 1;
+    margin-right: 10px;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  .text-section h1 {
+    font-size: 2rem; /* Initial font size */
+    color: white;
+    text-shadow: black 2px 1px 10px;
+    margin: 0;
+  }
+  
+  .text-section h3 {
+    font-size: 1.5rem; /* Initial font size */
+    color: rgb(238, 194, 51);
+    text-shadow: black 2px 1px 10px;
+    margin: 0;
+  }
+
+  .image-section {
+    flex: 0 0 auto; /* Ensure the image container remains flexible */
+    display: flex;
+    justify-content: center;
+    max-width: 180px; /* Maximum width for the image */
+  }
+  
+  .profile-image {
+    width: 100%; /* Responsive width */
+    max-width: 180px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .text-section {
+      margin-right: 10px;
+      text-align: left;
+    }
+  
+    .profile-image {
+      width: 100%;
+      max-width: 150px; /* Adjust the max width for smaller screens */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+  

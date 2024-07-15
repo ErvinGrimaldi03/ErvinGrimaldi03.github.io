@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/NavBar";
 import Gallery from "./components/Gallery";
+import About from "./components/About";
 import './App.css';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
   return (
     <div className="AppNav background-container">
       <Navbar />
+      <About></About>
       <Gallery projects={projects} />
     </div>
   );
