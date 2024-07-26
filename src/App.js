@@ -2,9 +2,31 @@ import React from "react";
 import Navbar from "./components/NavBar";
 import Gallery from "./components/Gallery";
 import About from "./components/About";
+import Footer from "./components/Footer";
+import Timeline from "./components/Timeline";
 import './App.css';
 
+
 function App() {
+
+  const experiences = [
+    {
+      company: 'Company A',
+      logo: 'link-to-company-a-logo.png',
+      time: 'January 2020 - Present',
+      description: 'Description of work experience at Company A',
+      comment: 'This was a significant role because...'
+    },
+    {
+      company: 'Company B',
+      logo: 'link-to-company-b-logo.png',
+      time: 'June 2018 - December 2019',
+      description: 'Description of work experience at Company B',
+      comment: 'Learned a lot about...'
+    },
+    // Add more experiences as needed
+  ];
+
   const projects = [
     {
       image: 'https://via.placeholder.com/300',
@@ -39,8 +61,10 @@ function App() {
   return (
     <div className="AppNav background-container">
       <Navbar />
-      <About></About>
+      <About />
+      <Timeline></Timeline>
       <Gallery projects={projects} />
+      <Footer />
     </div>
   );
 }
