@@ -6,6 +6,7 @@ function Navbar() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    console.log(`Menu is now ${!isOpen ? 'open' : 'closed'}`);  // Debugging statement
   };
 
   return (
