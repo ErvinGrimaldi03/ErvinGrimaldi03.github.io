@@ -6,14 +6,15 @@ import { FaGraduationCap, FaBlackTie, FaUniversity } from 'react-icons/fa';
 
 const Timeline = () => {
     const allElements = [
-        {
-            className: 'vertical-timeline-element--work',
-            icon: <FaUniversity />,
-            date: 'June 2024 - Current',
-            title: 'Robotics Engineer',
-            location: 'Legacy Robotics - Remote',
-            description: "As a Software Engineer Intern, I created a Python API to interface the Expedite modem with mission control systems like NASA's OpenMCT and ESA's SCOS2000, facilitating efficient satellite communication and data management."
-        },
+        
+        // {
+        //     className: 'vertical-timeline-element--work',
+        //     icon: <FaUniversity />,
+        //     date: 'June 2024 - Current',
+        //     title: 'Robotics Engineer',
+        //     location: 'Legacy Robotics - Remote',
+        //     description: "As a Software Engineer Intern, I created a Python API to interface the Expedite modem with mission control systems like NASA's OpenMCT and ESA's SCOS2000, facilitating efficient satellite communication and data management."
+        // },
         {
             className: 'vertical-timeline-element--work',
             icon: <FaBlackTie />,
@@ -22,6 +23,16 @@ const Timeline = () => {
             location: 'Remos Space AB - Remote',
             description: "As a Software Engineer Intern, I created a Python API to interface the Expedite modem with mission control systems like NASA's OpenMCT and ESA's SCOS2000, facilitating efficient satellite communication and data management."
         },
+
+        {
+            className: 'vertical-timeline-element--work',
+            icon: <FaBlackTie />,
+            date: 'June 2024 - Current',
+            title: 'Undergraduate Research Assistant',
+            location: 'Intelligent and Autonomous Systems Lab - Irvine, CA',
+            description: "I am contributing to an autonomous driving Rover, where I implement SLAM and other algorithms on a NVIDIA Jetson Xavier under the supervision of professor Marco Levorato in the Autonomous and Intelligent Systems Lab at UCI. Additionally, I am exploring Split Computing and its application to autonomous systems to maintain high performance at lower energy costs."
+        },
+
         {
             className: 'vertical-timeline-element--work',
             icon: <FaBlackTie />,

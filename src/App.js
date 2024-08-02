@@ -9,52 +9,35 @@ import './App.css';
 
 function App() {
 
-  const experiences = [
-    {
-      company: 'Company A',
-      logo: 'link-to-company-a-logo.png',
-      time: 'January 2020 - Present',
-      description: 'Description of work experience at Company A',
-      comment: 'This was a significant role because...'
-    },
-    {
-      company: 'Company B',
-      logo: 'link-to-company-b-logo.png',
-      time: 'June 2018 - December 2019',
-      description: 'Description of work experience at Company B',
-      comment: 'Learned a lot about...'
-    },
-    // Add more experiences as needed
-  ];
 
   const projects = [
     {
       image: 'https://via.placeholder.com/300',
-      description: 'This is a description of the first project.',
-      title: "Project 1",
-      technologies: ['React', 'CSS', 'JavaScript'],
+      description: 'Simulated a 32-bits MIPS processor in System Verilog',
+      title: "MIPS Multistage Processor",
+      technologies: ['System Verilog', 'RTL Design', 'Hardware Verification'],
+      tag: 'Computer Architecture',
+    },
+    {
+      image: 'https://via.placeholder.com/300',
+      description: 'Created my web-portfolio to showcase my skills',
+      title: "Personal Web-Portfolio",
+      technologies: ['React', 'CSS', 'HTML'],
       tag: 'Web Development',
     },
     {
       image: 'https://via.placeholder.com/300',
-      description: 'This is a description of the second project.',
-      title: "Project 2",
-      technologies: ['Node.js', 'Express', 'MongoDB'],
-      tag: 'Backend Development',
+      description: 'DooM 1993 python remade from scratch',
+      title: "PyDooM",
+      technologies: ['Python', 'PyGames', 'Game-Physics'],
+      tag: 'Game Engine',
     },
     {
       image: 'https://via.placeholder.com/300',
-      description: 'This is a description of the third project.',
-      title: "Project 3",
-      technologies: ['Python', 'Django', 'PostgreSQL'],
-      tag: 'Fullstack Development',
-    },
-    {
-      image: 'https://via.placeholder.com/300',
-      description: 'This is a description of the ds project.',
-      title: "Project 4",
-      technologies: ['Culo', 'CSS', 'JavaScript'],
-      tag: 'Web Development',
+      description: 'made an ultrasonic speed/distance detector in baremetal C for ATMega32',
+      title: "ATMega32 Ultrasonic speed detector",
+      technologies: ['C', 'ATMega32', 'AVR-GCC'],
+      tag: 'Embedded Systems',
     },
   ];
 
