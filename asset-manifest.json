@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/ervingrimaldi.com/static/css/main.88d624a9.css",
-    "main.js": "/ervingrimaldi.com/static/js/main.1959c315.js",
-    "static/js/453.6900af87.chunk.js": "/ervingrimaldi.com/static/js/453.6900af87.chunk.js",
-    "index.html": "/ervingrimaldi.com/index.html",
-    "main.88d624a9.css.map": "/ervingrimaldi.com/static/css/main.88d624a9.css.map",
-    "main.1959c315.js.map": "/ervingrimaldi.com/static/js/main.1959c315.js.map",
-    "453.6900af87.chunk.js.map": "/ervingrimaldi.com/static/js/453.6900af87.chunk.js.map"
+    "main.css": "/static/css/main.9cf736e0.css",
+    "main.js": "/static/js/main.2b19fd85.js",
+    "static/js/453.6900af87.chunk.js": "/static/js/453.6900af87.chunk.js",
+    "static/media/wave.svg": "/static/media/wave.a7d9d93d2d13cde87ed3401bfada2b8d.svg",
+    "static/media/layered-peaks-haikei.svg": "/static/media/layered-peaks-haikei.d79d4c0a56ec19c503a8.svg",
+    "index.html": "/index.html",
+    "main.9cf736e0.css.map": "/static/css/main.9cf736e0.css.map",
+    "main.2b19fd85.js.map": "/static/js/main.2b19fd85.js.map",
+    "453.6900af87.chunk.js.map": "/static/js/453.6900af87.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88d624a9.css",
-    "static/js/main.1959c315.js"
+    "static/css/main.9cf736e0.css",
+    "static/js/main.2b19fd85.js"
   ]
 }
