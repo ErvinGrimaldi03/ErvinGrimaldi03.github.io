@@ -49,16 +49,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 @media (max-width: 768px) {
   .background-container {
-    background-size: contain;
-    background-position: bottom;
+    background-size: cover;
+    background-position: bottom center;
   }
+}
 
-  
+@media (max-width: 480px) {
+  .background-container {
+    background-size: cover;
+    background-position: bottom center;
+  }
 }
