@@ -47,8 +47,10 @@
 .background-container {
   background-image: url('./imgs/layered-peaks-haikei.svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; /* Ensures the background covers the entire area */
   background-position: bottom;
+  background-attachment: fixed; /* Keeps the background fixed */
+  background-color: #282c34; /* Fallback color */
   min-height: 100vh; 
   display: flex;
   flex-direction: column;
@@ -56,9 +58,7 @@
 
 @media (max-width: 768px) {
   .background-container {
-    background-size: contain;
-    background-position: bottom;
+    background-size: contain; /* Ensures the background is contained within the viewport */
+    background-position: center bottom; /* Center the background horizontally and align it to the bottom */
   }
-
-  
 }
