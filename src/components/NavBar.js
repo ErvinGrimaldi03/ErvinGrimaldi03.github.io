@@ -6,17 +6,24 @@ function Navbar() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    console.log(`Menu is now ${!isOpen ? 'open' : 'closed'}`);  // Debugging statement
+  };
+
+  const handleScroll = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false); // Close the menu after clicking
+    }
   };
 
   return (
     <nav className="NavBar">
       <h1>Ervin Grimaldi</h1>
       <ul className={`NavLink ${isOpen ? 'active' : ''}`}>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href='#contact'>Contact Me</a></li>
+        <li><a href="#about" onClick={() => handleScroll('about')}>About</a></li>
+        <li><a href="#timeline" onClick={() => handleScroll('timeline')}>Experience</a></li>
+        <li><a href="#projects" onClick={() => handleScroll('projects')}>Projects</a></li>
+        <li><a href="#contact" onClick={() => handleScroll('contact')}>Contact Me</a></li>
       </ul>
       <div className="hamburger" onClick={toggleMenu}>
         <div></div>

@@ -3,6 +3,8 @@ import './About.css';
 import WAVES from 'vanta/src/vanta.rings';
 import wavy from '../imgs/wave.svg';
 
+
+import profile_foto from '../imgs/fotoProfilo.jpg'
 import linkedin_logo from '../imgs/LI-In-Bug.png';
 import github_logo from '../imgs/github-mark.png'
 
@@ -38,7 +40,7 @@ function About() {
             <h3>Software/Computer Engineer</h3>
           </div>
           <div className="image-section" ref={imageRef}>
-            <img src="https://via.placeholder.com/300" alt="Ervin" className="profile-image" />
+            <img src={profile_foto} alt="Ervin" className="profile-image" />
           </div>
         </div>
       </div>

@@ -7,10 +7,26 @@ import Timeline from "./components/Timeline";
 import './App.css';
 
 
+import website_card_foto from './imgs/website_foto.png'
+import pydoom_card_foto from './imgs/PyDoom-card-photo.png'
+
 function App() {
 
-
   const projects = [
+    {
+      image: 'https://via.placeholder.com/300',
+      description: "A web-app aimed boosting organization for events in large groups of friends, Characterized by ease of use, simple UI/UX, and collaborative focus.",
+      title: "KickFair",
+      technologies: ['React', 'JavaScript', 'Soupabase'],
+      tag: 'Web Development',
+    },
+    {
+      image: 'https://via.placeholder.com/300',
+      description: 'A 3D visualization made in Python with Pygames to showcase the beauty of mathematics and how numbers can create such beautiful patterns',
+      title: "Natural Number Visualization",
+      technologies: ['Python', 'Pygames', 'Umap'],
+      tag: 'Game Engine',
+    },
     {
       image: 'https://via.placeholder.com/300',
       description: 'Simulated a 32-bits MIPS processor in System Verilog',
@@ -19,22 +35,22 @@ function App() {
       tag: 'Computer Architecture',
     },
     {
-      image: 'https://via.placeholder.com/300',
-      description: 'Created my web-portfolio to showcase my skills',
+      image: website_card_foto,
+      description: 'What better way to showcase my skills than creating a web portfolio? Just some React, CSS, and a lot of learning',
       title: "Personal Web-Portfolio",
       technologies: ['React', 'CSS', 'HTML'],
       tag: 'Web Development',
     },
     {
-      image: 'https://via.placeholder.com/300',
-      description: 'DooM 1993 python remade from scratch',
+      image: pydoom_card_foto,
+      description: 'The legendary 1993 DOOM remade from scratch in Python using PyGames and lots of documentation',
       title: "PyDooM",
       technologies: ['Python', 'PyGames', 'Game-Physics'],
       tag: 'Game Engine',
     },
     {
       image: 'https://via.placeholder.com/300',
-      description: 'made an ultrasonic speed/distance detector in baremetal C for ATMega32',
+      description: 'Made an ultrasonic speed/distance detector in baremetal C for ATMega32',
       title: "ATMega32 Ultrasonic speed detector",
       technologies: ['C', 'ATMega32', 'AVR-GCC'],
       tag: 'Embedded Systems',
@@ -44,10 +60,18 @@ function App() {
   return (
     <div className="AppNav background-container">
       <Navbar />
-      <About />
-      <Timeline></Timeline>
-      <Gallery projects={projects} />
-      <Footer />
+      <section id="about">
+        <About />
+      </section>
+      <section id="timeline">
+        <Timeline />
+      </section>
+      <section id="projects">
+        <Gallery projects={projects} />
+      </section>
+      <section id="contact">
+        <Footer />
+      </section>
     </div>
   );
 }
