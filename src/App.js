@@ -9,10 +9,26 @@ import './App.css';
 
 import website_card_foto from './imgs/website_foto.png'
 import pydoom_card_foto from './imgs/PyDoom-card-photo.png'
-
+import racoonbot_foto from './imgs/RacoonBot_pic1.jpg'
 function App() {
 
   const projects = [
+    {
+      image: 'https://via.placeholder.com/300',
+      description: "An haptic glove controlling a remote robotic hand. The robotic hand sends haptic information to the glove that will give back all the accurate feelings",
+      title: "Teleoperated Transadial Haptic System",
+      technologies: ['C/C++', 'MicroControllers', 'Embedded System'],
+      tag: 'Robotics',
+    },
+
+    {
+      image: racoonbot_foto,
+      description: "A robot shaped like a Racoon developed at the Robot Ecology Lab at UCI. the RacoonBot has the goal of ecological surveillance with minimum impact",
+      title: "RacoonBot",
+      technologies: ['C/C++', 'MicroControllers', 'Embedded System'],
+      tag: 'Robotics',
+    },
+
     {
       image: 'https://via.placeholder.com/300',
       description: "A web-app aimed boosting organization for events in large groups of friends, Characterized by ease of use, simple UI/UX, and collaborative focus.",

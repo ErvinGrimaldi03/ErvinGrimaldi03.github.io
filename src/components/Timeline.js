@@ -7,18 +7,37 @@ import { FaGraduationCap, FaBlackTie, FaUniversity } from 'react-icons/fa';
 const Timeline = () => {
     const allElements = [
         
-        // {
-        //     className: 'vertical-timeline-element--work',
-        //     icon: <FaUniversity />,
-        //     date: 'June 2024 - Current',
-        //     title: 'Robotics Engineer',
-        //     location: 'Legacy Robotics - Remote',
-        //     description: "As a Software Engineer Intern, I created a Python API to interface the Expedite modem with mission control systems like NASA's OpenMCT and ESA's SCOS2000, facilitating efficient satellite communication and data management."
-        // },
         {
             className: 'vertical-timeline-element--work',
             icon: <FaBlackTie />,
+            date: 'Sept 2024 - Current',
+            title: 'Software Engineer Intern',
+            location: 'Snapchat Inc. - Remote',
+            description: "I created AR filters for Snapchat that increased user engagement by 20% and worked on VR prototypes that expanded the platform’s immersive content. I also streamlined 3D asset integration, improving rendering speed"
+        },
+        
+        {
+            className: 'vertical-timeline-element--work',
+            icon: <FaUniversity />,
+            date: 'Sept 2024 - Current',
+            title: 'Undergraduate Research Assistant',
+            location: 'Robot Ecology Lab - Irvine, CA',
+            description: "Under the direction of Dean of Engineering Magnus Egerstedt, I study long-duration autonomy by deploying robots in natural environments to monitor micro-climates over extended periods. I also investigate ecological principles in multi-agent systems to understand and optimize collaborative behaviors among heterogeneous robots."
+        },
+
+        {
+            className: 'vertical-timeline-element--work',
+            icon: <FaUniversity />,
             date: 'June 2024 - Current',
+            title: 'Arm Team Lead - Robotics Engineer',
+            location: 'Legacy Robotics - Remote',
+            description: "As the Arm Team Lead, my responsability is to ensure designing an effective and efficient robotic arm that can grab, lift, and carry different object in autonomy. Using ROS2 I lead sensor fusion and autonomy operations"
+        },
+
+        {
+            className: 'vertical-timeline-element--work',
+            icon: <FaBlackTie />,
+            date: 'June 2024 - Sept 2024',
             title: 'Software Engineer Intern',
             location: 'Remos Space AB - Remote',
             description: "As a Software Engineer Intern, I created a Python API to interface the Expedite modem with mission control systems like NASA's OpenMCT and ESA's SCOS2000, facilitating efficient satellite communication and data management."
