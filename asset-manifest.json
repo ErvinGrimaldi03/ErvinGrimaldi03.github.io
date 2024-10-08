@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.9c5305f2.css",
-    "main.js": "/static/js/main.e3ab616f.js",
+    "main.js": "/static/js/main.eecb1298.js",
     "static/js/453.6900af87.chunk.js": "/static/js/453.6900af87.chunk.js",
+    "static/media/RacoonBot_pic1.jpg": "/static/media/RacoonBot_pic1.6987f9ac39e4835f00a3.jpg",
     "static/media/website_foto.png": "/static/media/website_foto.a7fdd9510f6ec4c5ca19.png",
     "static/media/fotoProfilo.jpg": "/static/media/fotoProfilo.1d7b3201b7c4c92e53d1.jpg",
     "static/media/PyDoom-card-photo.png": "/static/media/PyDoom-card-photo.413a86baa3344600476e.png",
@@ -10,11 +11,11 @@
     "static/media/layered-peaks-haikei.svg": "/static/media/layered-peaks-haikei.d79d4c0a56ec19c503a8.svg",
     "index.html": "/index.html",
     "main.9c5305f2.css.map": "/static/css/main.9c5305f2.css.map",
-    "main.e3ab616f.js.map": "/static/js/main.e3ab616f.js.map",
+    "main.eecb1298.js.map": "/static/js/main.eecb1298.js.map",
     "453.6900af87.chunk.js.map": "/static/js/453.6900af87.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9c5305f2.css",
-    "static/js/main.e3ab616f.js"
+    "static/js/main.eecb1298.js"
   ]
 }
