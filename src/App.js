@@ -5,7 +5,7 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
 import './App.css';
-
+" "
 
 import website_card_foto from './imgs/website_foto.png'
 import pydoom_card_foto from './imgs/PyDoom-card-photo.png'
