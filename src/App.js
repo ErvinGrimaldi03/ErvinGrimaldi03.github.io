@@ -10,7 +10,7 @@ import './App.css';
 import website_card_foto from './imgs/website_foto.png'
 import pydoom_card_foto from './imgs/PyDoom-card-photo.png'
 import racoonbot_foto from './imgs/RacoonBot_pic1.jpg'
-import jeanLuke from './imgs/jeanLuke'
+import jeanLuke from './imgs/JeanLuke.jpg'
 function App() {
 
   const projects = [
