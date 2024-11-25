@@ -10,6 +10,7 @@ import './App.css';
 import website_card_foto from './imgs/website_foto.png'
 import pydoom_card_foto from './imgs/PyDoom-card-photo.png'
 import racoonbot_foto from './imgs/RacoonBot_pic1.jpg'
+import jeanLuke from './imgs/jeanLuke'
 function App() {
 
   const projects = [
@@ -22,9 +23,9 @@ function App() {
     },
 
     {
-      image: racoonbot_foto,
-      description: "A robot shaped like a Racoon developed at the Robot Ecology Lab at UCI. the RacoonBot has the goal of ecological surveillance with minimum impact",
-      title: "RacoonBot",
+      image: jeanLuke,
+      description: "A robot puppet commissioned by the OC Discovery Cube. This robot is currently being utilized for the show 'Winter Lights'.",
+      title: "Jean Luke",
       technologies: ['C/C++', 'MicroControllers', 'Embedded System'],
       tag: 'Robotics',
     },

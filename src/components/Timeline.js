@@ -22,7 +22,7 @@ const Timeline = () => {
             date: 'Sept 2024 - Current',
             title: 'Undergraduate Research Assistant',
             location: 'Robot Ecology Lab - Irvine, CA',
-            description: "Under the direction of Dean of Engineering Magnus Egerstedt, I study long-duration autonomy by deploying robots in natural environments to monitor micro-climates over extended periods. I also investigate ecological principles in multi-agent systems to understand and optimize collaborative behaviors among heterogeneous robots."
+            description: "Under the direction of Dean of Engineering Magnus Egerstedt, I study long-duration autonomy by deploying robots in natural environments to monitor micro-climates over extended periods. I'm also intrested in investigating ecological principles in multi-agent systems to understand and optimize collaborative behaviors among heterogeneous robots."
         },
 
         {
