@@ -6,11 +6,38 @@ import { FaGraduationCap, FaBlackTie, FaUniversity } from 'react-icons/fa';
 
 const Timeline = () => {
     const allElements = [
+        {
+            className: 'vertical-timeline-element--work',
+            icon: <FaBlackTie />,
+            date: 'May 2026 - Present',
+            title: 'Embedded & Infrastructure Engineer',
+            location: 'Stealth Startup - Mountain View, CA',
+            description: "Building the radio stack of an SDR platform (FPGA + ARM running custom PetaLinux) in C++ and Rust. Designed custom Layer 2/3 protocols, and sole engineer integrating the radio with a drone running custom Yocto Linux over gRPC/Protobuf. Built a PHY/MAC event tracing system that writes to MCAP using Protobuf, multithreading and buffering, plus Kalman-filter ranging with meter-level accuracy and GPS-free IMU attitude estimation (VQF)."
+        },
+
+        {
+            className: 'vertical-timeline-element--work',
+            icon: <FaBlackTie />,
+            date: 'Jan 2026 - May 2026',
+            title: 'Embedded Software Engineer',
+            location: 'Hidonix Industries - Santa Monica, CA',
+            description: "Completed the end-to-end software stack for a 14-motor omnidirectional stair-climbing rover showcased at CES 2026, generating 50+ corporate partnership inquiries and preparing it for a ROS2 migration. Wrote C/RTOS firmware on an RP2040 to drive 14 brushless actuators deterministically over CAN bus, and streamed LiDAR point clouds from a Jetson Orin with sub-100ms latency using custom RTP packets and Draco compression in C++. Also built remote depth perception with a ZED 2i over H.265/GStreamer and PnP-based spatial tracking in Python."
+        },
+
+        {
+            className: 'vertical-timeline-element--work',
+            icon: <FaBlackTie />,
+            date: 'Sept 2025 - Jan 2026',
+            title: 'Junior Firmware Engineer',
+            location: 'Hidonix Industries - Santa Monica, CA',
+            description: "Supported custom SoC development by building a custom Yocto Linux kernel for a low-power wearable, enabling I2C/SPI, integrating Wi-Fi/BT blobs, and writing boot-sequence daemons. Cut the Yocto OS image by 75% (2GB to 500MB) on a Rockchip 3308B smartwatch-class device, and validated the ESP32 migration with full feature parity (Wi-Fi, BT, GNSS, LTE, IMU) by porting dependencies to FreeRTOS, reducing hardware cost, dev time, and power."
+        },
+
         
         {
             className: 'vertical-timeline-element--work',
             icon: <FaBlackTie />,
-            date: 'Sept 2024 - Current',
+            date: 'Sept 2024 - Nov 2025',
             title: 'Software Engineer Intern',
             location: 'Snapchat Inc. - Remote',
             description: "I created AR filters for Snapchat that increased user engagement by 20% and worked on VR prototypes that expanded the platform’s immersive content. I also streamlined 3D asset integration, improving rendering speed"
@@ -19,7 +46,7 @@ const Timeline = () => {
         {
             className: 'vertical-timeline-element--work',
             icon: <FaUniversity />,
-            date: 'Sept 2024 - Current',
+            date: 'Sept 2024 - June 2025',
             title: 'Undergraduate Research Assistant',
             location: 'Robot Ecology Lab - Irvine, CA',
             description: "Under the direction of Dean of Engineering Magnus Egerstedt, I study long-duration autonomy by deploying robots in natural environments to monitor micro-climates over extended periods. I'm also intrested in investigating ecological principles in multi-agent systems to understand and optimize collaborative behaviors among heterogeneous robots."
@@ -28,7 +55,7 @@ const Timeline = () => {
         {
             className: 'vertical-timeline-element--work',
             icon: <FaUniversity />,
-            date: 'June 2024 - Current',
+            date: 'June 2024 - June 2025',
             title: 'Arm Team Lead - Robotics Engineer',
             location: 'Legacy Robotics - Remote',
             description: "As the Arm Team Lead, my responsability is to ensure designing an effective and efficient robotic arm that can grab, lift, and carry different object in autonomy. Using ROS2 I lead sensor fusion and autonomy operations"

@@ -9,15 +9,33 @@ import './App.css';
 
 import website_card_foto from './imgs/website_foto.png'
 import pydoom_card_foto from './imgs/PyDoom-card-photo.png'
-import racoonbot_foto from './imgs/RacoonBot_pic1.jpg'
+import racoonbot_foto from './imgs/racoonbot_foto.png'
+import hido2_foto from './imgs/hido2.png'
+import haptic_hand from './imgs/image4.jpg'
 import jeanLuke from './imgs/JeanLuke.jpg'
 function App() {
 
   const projects = [
     {
-      image: 'https://via.placeholder.com/300',
+      image: hido2_foto,
+      description: "in-house-developed autonomous mapping rover and unmanned ground vehicle.  Hido II is built to climb stairs and traverse rough, rugged, or uncharted terrain.",
+      title: "Hido II",
+      technologies: ['C/C++', 'Sensors', 'Embedded System'],
+      tag: 'Robotics',
+    },
+
+    {
+      image: haptic_hand,
       description: "An haptic glove controlling a remote robotic hand. The robotic hand sends haptic information to the glove that will give back all the accurate feelings",
       title: "Teleoperated Transadial Haptic System",
+      technologies: ['C/C++', 'MicroControllers', 'Embedded System'],
+      tag: 'Robotics',
+    },
+
+    {
+      image: racoonbot_foto,
+      description: "The RaccoonBot is an autonomous, solar-powered, wire-traversing robotic platform Built for persistent, long-term environmental monitoring in forest and coastal ecosystems. Deployed at Crystal Cove State Park, CA.",
+      title: "RacoonBot",
       technologies: ['C/C++', 'MicroControllers', 'Embedded System'],
       tag: 'Robotics',
     },
@@ -31,46 +49,11 @@ function App() {
     },
 
     {
-      image: 'https://via.placeholder.com/300',
-      description: "A web-app aimed boosting organization for events in large groups of friends, Characterized by ease of use, simple UI/UX, and collaborative focus.",
-      title: "KickFair",
-      technologies: ['React', 'JavaScript', 'Soupabase'],
-      tag: 'Web Development',
-    },
-    {
-      image: 'https://via.placeholder.com/300',
-      description: 'A 3D visualization made in Python with Pygames to showcase the beauty of mathematics and how numbers can create such beautiful patterns',
-      title: "Natural Number Visualization",
-      technologies: ['Python', 'Pygames', 'Umap'],
-      tag: 'Game Engine',
-    },
-    {
-      image: 'https://via.placeholder.com/300',
-      description: 'Simulated a 32-bits MIPS processor in System Verilog',
-      title: "MIPS Multistage Processor",
-      technologies: ['System Verilog', 'RTL Design', 'Hardware Verification'],
-      tag: 'Computer Architecture',
-    },
-    {
       image: website_card_foto,
       description: 'What better way to showcase my skills than creating a web portfolio? Just some React, CSS, and a lot of learning',
       title: "Personal Web-Portfolio",
       technologies: ['React', 'CSS', 'HTML'],
       tag: 'Web Development',
-    },
-    {
-      image: pydoom_card_foto,
-      description: 'The legendary 1993 DOOM remade from scratch in Python using PyGames and lots of documentation',
-      title: "PyDooM",
-      technologies: ['Python', 'PyGames', 'Game-Physics'],
-      tag: 'Game Engine',
-    },
-    {
-      image: 'https://via.placeholder.com/300',
-      description: 'Made an ultrasonic speed/distance detector in baremetal C for ATMega32',
-      title: "ATMega32 Ultrasonic speed detector",
-      technologies: ['C', 'ATMega32', 'AVR-GCC'],
-      tag: 'Embedded Systems',
     },
   ];
 
